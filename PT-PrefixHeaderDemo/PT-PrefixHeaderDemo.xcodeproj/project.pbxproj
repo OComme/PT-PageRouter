@@ -7,25 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01F4B99F1FE6AD420065A935 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B99E1FE6AD420065A935 /* AppDelegate.m */; };
 		01F4B9A21FE6AD420065A935 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B9A11FE6AD420065A935 /* ViewController.m */; };
 		01F4B9A51FE6AD420065A935 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F4B9A31FE6AD420065A935 /* Main.storyboard */; };
-		01F4B9A71FE6AD420065A935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F4B9A61FE6AD420065A935 /* Assets.xcassets */; };
 		01F4B9AA1FE6AD420065A935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F4B9A81FE6AD420065A935 /* LaunchScreen.storyboard */; };
-		01F4B9AD1FE6AD420065A935 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B9AC1FE6AD420065A935 /* main.m */; };
+		01F4B9B61FE6B2780065A935 /* PTPublicPageRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B9B51FE6B2780065A935 /* PTPublicPageRouter.m */; };
+		01F4B9C81FE6B9210065A935 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B9C61FE6B9210065A935 /* AppDelegate.m */; };
+		01F4B9C91FE6B9210065A935 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B9C71FE6B9210065A935 /* main.m */; };
+		01F4B9CE1FE6B9770065A935 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F4B9CD1FE6B9770065A935 /* Info.plist */; };
+		01F4B9D01FE6B98D0065A935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F4B9CF1FE6B98D0065A935 /* Assets.xcassets */; };
+		01F4B9D31FE6B9EC0065A935 /* PublicModalRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F4B9D21FE6B9EC0065A935 /* PublicModalRouter.m */; };
+		01F4B9D51FE6BA320065A935 /* RouterForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F4B9D41FE6BA320065A935 /* RouterForm.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01F4B99A1FE6AD420065A935 /* PT-PrefixHeaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PT-PrefixHeaderDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		01F4B99D1FE6AD420065A935 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		01F4B99E1FE6AD420065A935 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		01F4B9A01FE6AD420065A935 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		01F4B9A11FE6AD420065A935 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		01F4B9A41FE6AD420065A935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		01F4B9A61FE6AD420065A935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01F4B9A91FE6AD420065A935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		01F4B9AB1FE6AD420065A935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01F4B9AC1FE6AD420065A935 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01F4B9B41FE6B2780065A935 /* PTPublicPageRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTPublicPageRouter.h; sourceTree = "<group>"; };
+		01F4B9B51FE6B2780065A935 /* PTPublicPageRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTPublicPageRouter.m; sourceTree = "<group>"; };
+		01F4B9B71FE6B3F70065A935 /* PTPrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTPrefixHeader.h; sourceTree = "<group>"; };
+		01F4B9B81FE6B41A0065A935 /* PTDefineHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTDefineHeader.h; sourceTree = "<group>"; };
+		01F4B9C51FE6B9210065A935 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		01F4B9C61FE6B9210065A935 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		01F4B9C71FE6B9210065A935 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01F4B9CD1FE6B9770065A935 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01F4B9CF1FE6B98D0065A935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01F4B9D11FE6B9EC0065A935 /* PublicModalRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicModalRouter.h; sourceTree = "<group>"; };
+		01F4B9D21FE6B9EC0065A935 /* PublicModalRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicModalRouter.m; sourceTree = "<group>"; };
+		01F4B9D41FE6BA320065A935 /* RouterForm.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RouterForm.plist; sourceTree = "<group>"; };
+		01F4B9D61FE6BBDB0065A935 /* PTPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +70,49 @@
 		01F4B99C1FE6AD420065A935 /* PT-PrefixHeaderDemo */ = {
 			isa = PBXGroup;
 			children = (
-				01F4B99D1FE6AD420065A935 /* AppDelegate.h */,
-				01F4B99E1FE6AD420065A935 /* AppDelegate.m */,
+				01F4B9D61FE6BBDB0065A935 /* PTPrefixHeader.pch */,
+				01F4B9CA1FE6B93B0065A935 /* Router */,
+				01F4B9B31FE6AFB80065A935 /* PrefixHeader */,
+				01F4B9C41FE6B9210065A935 /* Supporting Files */,
 				01F4B9A01FE6AD420065A935 /* ViewController.h */,
 				01F4B9A11FE6AD420065A935 /* ViewController.m */,
+				01F4B9CF1FE6B98D0065A935 /* Assets.xcassets */,
 				01F4B9A31FE6AD420065A935 /* Main.storyboard */,
-				01F4B9A61FE6AD420065A935 /* Assets.xcassets */,
 				01F4B9A81FE6AD420065A935 /* LaunchScreen.storyboard */,
-				01F4B9AB1FE6AD420065A935 /* Info.plist */,
-				01F4B9AC1FE6AD420065A935 /* main.m */,
 			);
 			path = "PT-PrefixHeaderDemo";
+			sourceTree = "<group>";
+		};
+		01F4B9B31FE6AFB80065A935 /* PrefixHeader */ = {
+			isa = PBXGroup;
+			children = (
+				01F4B9B71FE6B3F70065A935 /* PTPrefixHeader.h */,
+				01F4B9B41FE6B2780065A935 /* PTPublicPageRouter.h */,
+				01F4B9B51FE6B2780065A935 /* PTPublicPageRouter.m */,
+				01F4B9B81FE6B41A0065A935 /* PTDefineHeader.h */,
+			);
+			path = PrefixHeader;
+			sourceTree = SOURCE_ROOT;
+		};
+		01F4B9C41FE6B9210065A935 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01F4B9C51FE6B9210065A935 /* AppDelegate.h */,
+				01F4B9C61FE6B9210065A935 /* AppDelegate.m */,
+				01F4B9C71FE6B9210065A935 /* main.m */,
+				01F4B9CD1FE6B9770065A935 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01F4B9CA1FE6B93B0065A935 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				01F4B9D41FE6BA320065A935 /* RouterForm.plist */,
+				01F4B9D11FE6B9EC0065A935 /* PublicModalRouter.h */,
+				01F4B9D21FE6B9EC0065A935 /* PublicModalRouter.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,9 +173,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F4B9CE1FE6B9770065A935 /* Info.plist in Resources */,
 				01F4B9AA1FE6AD420065A935 /* LaunchScreen.storyboard in Resources */,
-				01F4B9A71FE6AD420065A935 /* Assets.xcassets in Resources */,
+				01F4B9D01FE6B98D0065A935 /* Assets.xcassets in Resources */,
 				01F4B9A51FE6AD420065A935 /* Main.storyboard in Resources */,
+				01F4B9D51FE6BA320065A935 /* RouterForm.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F4B9C91FE6B9210065A935 /* main.m in Sources */,
+				01F4B9C81FE6B9210065A935 /* AppDelegate.m in Sources */,
+				01F4B9B61FE6B2780065A935 /* PTPublicPageRouter.m in Sources */,
 				01F4B9A21FE6AD420065A935 /* ViewController.m in Sources */,
-				01F4B9AD1FE6AD420065A935 /* main.m in Sources */,
-				01F4B99F1FE6AD420065A935 /* AppDelegate.m in Sources */,
+				01F4B9D31FE6B9EC0065A935 /* PublicModalRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +327,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "PT-PrefixHeaderDemo/Info.plist";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PT-PrefixHeaderDemo/PTPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PT-PrefixHeaderDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.ocomme.PT-PrefixHeaderDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.ocomme.prefixheader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -292,9 +342,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "PT-PrefixHeaderDemo/Info.plist";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PT-PrefixHeaderDemo/PTPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PT-PrefixHeaderDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "pt.ocomme.PT-PrefixHeaderDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = pt.ocomme.prefixheader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
