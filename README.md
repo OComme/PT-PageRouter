@@ -1,9 +1,8 @@
 # PT-PrefixHeader
-PCH File in Objective-C project
 
 `PTDefineHeader`，引入常用的自定义方法
 
-```
+```Objective-C
 #import "PTDefineHeader.h"
 ```
 
