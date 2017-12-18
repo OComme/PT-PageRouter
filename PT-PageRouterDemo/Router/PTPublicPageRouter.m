@@ -16,7 +16,9 @@
     
     Class targetClass = [self Parse_targetClassWithUrl:url FormData:formData];
     UIViewController<PTPublicPageRouterDelegate> *targetVc = [targetClass new];
-    [targetVc router_setParamentDict:formData];
+    if(formData){
+        [targetVc router_setParamentDict:formData];
+    }
     [[self CurrentViewController].navigationController pushViewController:targetVc animated:animated];
 }
 

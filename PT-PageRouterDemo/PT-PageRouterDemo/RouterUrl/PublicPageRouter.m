@@ -1,16 +1,16 @@
 //
-//  PublicModalRouter.m
-//  PT-PrefixHeaderDemo
+//  PublicPageRouter.m
+//  PT-PageRouterDemo
 //
-//  Created by BlanBok on 2017/12/17.
-//  Copyright © 2017年 OComme. All rights reserved.
+//  Created by admin on 2017/12/18.
+//  Copyright © 2017年 juyuanGroup. All rights reserved.
 //
 
-#import "PublicModalRouter.h"
+#import "PublicPageRouter.h"
 
-@implementation PublicModalRouter
+@implementation PublicPageRouter
 
-+ (void)OpenUrlWithModalType:(PublicModalRouterType *)modalType DataEntity:(NSDictionary *)entity Animated:(BOOL)animated
++ (void)OpenUrlWithModalType:(PublicPageRouterType *)modalType DataEntity:(NSDictionary *)entity Animated:(BOOL)animated
 {
     [PTPublicPageRouter OpenUrl:[self Get_urlWithType:modalType] FormData:entity Animated:animated];
 }
@@ -28,6 +28,5 @@
     
     return [NSURL URLWithString:[resultStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
 }
-
 
 @end

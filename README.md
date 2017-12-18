@@ -1,17 +1,9 @@
 # PT-PrefixHeader
 
-`PTDefineHeader`，引入常用的自定义方法
+以下方法用以跳转页面
 
 ```Objective-C
-#import "PTDefineHeader.h"
-```
-
-`PTPublicPageRouter`，用以跳转页面
-
-```Objective-C
-#import "PTPublicPageRouter.h"
-
-/**
+ /**
  通过本地路径实现跳转
  
  @param url 传入路径
@@ -22,3 +14,5 @@
 ```
  
  
+
+

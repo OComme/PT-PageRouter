@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PT-PrefixHeaderDemo.xcodeproj">
+      location = "self:PT-PageRouterDemo.xcodeproj">
    </FileRef>
 </Workspace>

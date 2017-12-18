@@ -1,14 +1,15 @@
 //
 //  ViewController.m
-//  PT-PrefixHeaderDemo
+//  PT-PageRouterDemo
 //
-//  Created by BlanBok on 2017/12/17.
-//  Copyright © 2017年 OComme. All rights reserved.
+//  Created by admin on 2017/12/18.
+//  Copyright © 2017年 juyuanGroup. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "PublicPageRouter.h"
 
-@interface ViewController ()
+@interface ViewController ()<PTPublicPageRouterDelegate>
 
 @end
 
@@ -22,9 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1];
+    
     [self add_button];
-    
-    
 }
 
 - (void)add_button
@@ -42,14 +43,12 @@
 /**
  点击跳转
  */
-- (IBAction)event_modal:(id)sender {
-    [PublicModalRouter OpenUrlWithModalType:PublicModalRouterModuleTestHome DataEntity:@{@"title":@"MMP"} Animated:YES];
+- (void)event_modal:(id)sender {
+    [PublicPageRouter OpenUrlWithModalType:PublicPageRouterModuleTestHome DataEntity:@{@"title":@"MMP"} Animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 @end

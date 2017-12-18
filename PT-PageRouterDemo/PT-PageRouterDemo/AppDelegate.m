@@ -1,9 +1,9 @@
 //
 //  AppDelegate.m
-//  PT-PrefixHeaderDemo
+//  PT-PageRouterDemo
 //
-//  Created by BlanBok on 2017/12/17.
-//  Copyright © 2017年 OComme. All rights reserved.
+//  Created by admin on 2017/12/18.
+//  Copyright © 2017年 juyuanGroup. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -18,12 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
