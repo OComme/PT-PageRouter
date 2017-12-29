@@ -23,10 +23,14 @@
 static NSString * _Nullable const PTPublicPageRouterNotification    = @"_pageRouter_notice";
 
 //==================================entity key===========================================
+///介绍信息
+static NSString * _Nullable const PTPublicPageRouterKeyDescrip      = @"_descrip";
 ///必填项
 static NSString * _Nullable const PTPublicPageRouterKeyRequire      = @"_require";
 ///选填项
 static NSString * _Nullable const PTPublicPageRouterKeyOption       = @"_option";
+
+//==================================configure key===========================================
 ///目标路径
 static NSString * _Nullable const PTPublicPageRouterKeyPath         = @"_keyPath";
 ///控制器类名
@@ -36,6 +40,11 @@ static NSString * _Nullable const PTPublicPageRouterKeyClass        = @"_classNa
 /*
  example Dict
  <dict>
+ 
+ <!--介绍信息-->
+ <key>_descrip</key>
+ <string>关于页面的介绍</string>
+ 
  <!--必填参数-->
  <key>_require</key>
  <dict>

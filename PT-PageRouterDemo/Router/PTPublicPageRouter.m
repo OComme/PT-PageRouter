@@ -21,9 +21,12 @@
     }
     [[self CurrentViewController].navigationController pushViewController:targetVc animated:animated];
     
-    NSDictionary *configureDict = [self Parse_configureDataWithUrl:url];
-    NSDictionary *regisistDict = [self Parse_regisistDataForFilePath:url.path KeyPath:configureDict[PTPublicPageRouterKeyPath]];
-    [[NSNotificationCenter defaultCenter]postNotificationName:PTPublicPageRouterNotification object:targetVc userInfo:regisistDict];
+    NSString *descript = [self Parse_regisistDataWithUrl:url][PTPublicPageRouterKeyDescrip];
+    NSMutableDictionary *infoDict = [NSMutableDictionary dictionaryWithDictionary:formData];
+    if (formData[PTPublicPageRouterKeyDescrip] == nil && descript) {
+        infoDict[PTPublicPageRouterKeyDescrip] = descript;
+    }
+    [[NSNotificationCenter defaultCenter]postNotificationName:PTPublicPageRouterNotification object:targetVc userInfo:infoDict];
 }
 
 #pragma mark-parse
@@ -38,7 +41,7 @@
 + (Class)Parse_targetClassWithUrl:(NSURL*)url FormData:(NSDictionary*)formData
 {
     NSDictionary *configureDict = [self Parse_configureDataWithUrl:url];
-    NSDictionary *requireDict = [self Parse_regisistDataForFilePath:url.path KeyPath:configureDict[PTPublicPageRouterKeyPath]][PTPublicPageRouterKeyRequire];
+    NSDictionary *requireDict = [self Parse_regisistDataWithUrl:url][PTPublicPageRouterKeyRequire];
     NSAssert((requireDict.count == 0) || [[NSSet setWithArray:requireDict.allKeys]isSubsetOfSet:[NSSet setWithArray:formData.allKeys]], @"导入数据需包含-PTPublicPageRouterKeyRequire-所规定的值");
     
     NSString *className = configureDict[PTPublicPageRouterKeyClass];
@@ -87,12 +90,15 @@
 /**
  获取注册表单中对应的描述
  
- @param filePath 存储路径（注册表单）
- @param keyPath 获取路径（注册表单中的相应描述）
+ @param url 请求路径
  @return 存储在表单中的相应描述
  */
-+ (NSDictionary*)Parse_regisistDataForFilePath:(NSString*)filePath KeyPath:(NSString*)keyPath
++ (NSDictionary*)Parse_regisistDataWithUrl:(NSURL*)url
 {
+    NSDictionary *configureDict = [self Parse_configureDataWithUrl:url];
+    NSString *filePath  = url.path;
+    NSString *keyPath   = configureDict[PTPublicPageRouterKeyPath];
+    
     NSDictionary *fileData =  [NSDictionary dictionaryWithContentsOfFile:filePath];
     NSAssert([fileData isKindOfClass:[NSDictionary class]], @"plist文件内的数据，必须为字典");
     
