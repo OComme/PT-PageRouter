@@ -20,6 +20,10 @@
         [targetVc router_setParamentDict:formData];
     }
     [[self CurrentViewController].navigationController pushViewController:targetVc animated:animated];
+    
+    NSDictionary *configureDict = [self Parse_configureDataWithUrl:url];
+    NSDictionary *regisistDict = [self Parse_regisistDataForFilePath:url.path KeyPath:configureDict[PTPublicPageRouterKeyPath]];
+    [[NSNotificationCenter defaultCenter]postNotificationName:PTPublicPageRouterNotification object:targetVc userInfo:regisistDict];
 }
 
 #pragma mark-parse

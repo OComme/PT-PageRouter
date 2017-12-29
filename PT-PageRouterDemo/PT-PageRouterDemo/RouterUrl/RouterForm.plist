@@ -6,8 +6,8 @@
 	<dict>
 		<key>home</key>
 		<dict>
-			<key>descip</key>
-			<string>description</string>
+			<key>_descip</key>
+			<string> 这是首页</string>
 			<key>_require</key>
 			<dict>
 				<key>title</key>

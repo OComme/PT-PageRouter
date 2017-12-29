@@ -18,6 +18,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+//==================================notification===========================================
+///页面跳转通知  object为控制器实例  infodict为介绍内容
+static NSString * _Nullable const PTPublicPageRouterNotification    = @"_pageRouter_notice";
+
 //==================================entity key===========================================
 ///必填项
 static NSString * _Nullable const PTPublicPageRouterKeyRequire      = @"_require";
