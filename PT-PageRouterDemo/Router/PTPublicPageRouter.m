@@ -17,9 +17,11 @@
     Class targetClass = [self Parse_targetClassWithUrl:url FormData:formData];
     UIViewController<PTPublicPageRouterDelegate> *targetVc = [targetClass new];
     if(formData){
+        NSAssert([targetClass conformsToProtocol:@protocol(PTPublicPageRouterDelegate)], @"模块中的目标viewController需遵循跳转协议 PTPublicPageRouterDelegate");
         [targetVc router_setParamentDict:formData];
     }
     [[self CurrentViewController].navigationController pushViewController:targetVc animated:animated];
+    
     
     NSString *descript = [self Parse_regisistDataWithUrl:url][PTPublicPageRouterKeyDescrip];
     NSMutableDictionary *infoDict = [NSMutableDictionary dictionaryWithDictionary:formData];
@@ -46,7 +48,6 @@
     
     NSString *className = configureDict[PTPublicPageRouterKeyClass];
     NSAssert(NSClassFromString(className), @"目标模块-PTPublicPageRouterKeyClass-信息配置错误或未导入目标模块");
-    NSAssert([NSClassFromString(className) conformsToProtocol:@protocol(PTPublicPageRouterDelegate)], @"模块中的目标viewController需遵循跳转协议 PTPublicPageRouterDelegate");
     
     return NSClassFromString(className);
 }
