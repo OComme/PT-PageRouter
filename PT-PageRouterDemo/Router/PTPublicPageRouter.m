@@ -16,13 +16,12 @@
     [[self CurrentViewController].navigationController pushViewController:targetVc animated:animated];
 }
 
-+ (void)OpenUrl:(NSURL *)url FormData:(NSDictionary *)formData Animated:(BOOL)animated Completion:(void (^ _Nullable)(id _Nullable))completion
++ (void)OpenUrl:(NSURL *)url FormData:(NSDictionary *)formData Animated:(BOOL)animated Completion:(void (^ _Nullable)(UIViewController * _Nullable))completion
 {
     
     UIViewController<PTPublicPageRouterDelegate> *targetVc = [self Get_ViewControllerWithUrl:url FormData:formData];
     if (completion) {
-        NSAssert([targetVc respondsToSelector:@selector(router_setParamentDict:)], @"模块中的目标viewController需实现@selector(router_setParamentDict:)方法");
-        [targetVc router_completion:completion];
+        completion(targetVc);
     }
     [[self CurrentViewController].navigationController pushViewController:targetVc animated:animated];
 }

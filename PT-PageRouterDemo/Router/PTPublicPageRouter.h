@@ -70,14 +70,6 @@ static NSString * _Nullable const PTPublicPageRouterKeyClass        = @"_classNa
  */
 - (void)router_setParamentDict:(NSDictionary*_Nonnull)dict;
 
-@optional
-/**
- 配置回调方式
- 
- @param completion 回调
- */
-- (void)router_completion:(void (^ __nullable)(id _Nullable responseObject))completion;
-
 @end
 
 @interface PTPublicPageRouter : NSObject
@@ -105,6 +97,6 @@ static NSString * _Nullable const PTPublicPageRouterKeyClass        = @"_classNa
  @param animated 是否显示跳转动画
  @param completion 跳转回调
  */
-+ (void)OpenUrl:(NSURL*_Nonnull)url FormData:(NSDictionary*_Nullable)formData  Animated:(BOOL)animated Completion:(void (^ __nullable)(id _Nullable responseObject))completion;
++ (void)OpenUrl:(NSURL*_Nonnull)url FormData:(NSDictionary*_Nullable)formData  Animated:(BOOL)animated Completion:(void (^ __nullable)(UIViewController* _Nullable toViewController))completion;
 
 @end
