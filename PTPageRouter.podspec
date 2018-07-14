@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
 
   s.author             = { "OComme" => "a163913692@icloud.com" }
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "8.0"
   s.requires_arc = true
   
   # 不指定分支
