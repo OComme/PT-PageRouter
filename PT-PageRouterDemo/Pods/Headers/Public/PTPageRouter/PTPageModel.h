@@ -1,1 +1,1 @@
-../../../PTPageRouter/PT-PageRouterDemo/Router/PTPageModel.h
+../../../PTPageRouter/PTPageRouter/PTPageModel.h

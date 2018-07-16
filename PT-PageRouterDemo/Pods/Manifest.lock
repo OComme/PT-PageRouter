@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   PTPageRouter:
-    :commit: adf176ee34afed14a970344dac5a1ddf096d4dee
+    :commit: ad7509dc8641ab308f935e43bdc2d85d01a44b7b
     :git: ../
 
 SPEC CHECKSUMS:
-  PTPageRouter: 4ce51bbd41a84c4c89c615966292e1ab1cd34769
+  PTPageRouter: 9ea063cfddf9baa09dc23acd63ff1c912e125dee
 
 PODFILE CHECKSUM: 377a0687eb880209fe7f7e862b55513a4994e91d
 

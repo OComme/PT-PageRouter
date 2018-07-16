@@ -17,7 +17,7 @@
 				<key>title</key>
 				<string>（NSString）页面标题</string>
 			</dict>
-			<key>keys_options</key>
+			<key>keys_option</key>
 			<dict>
 				<key>navigationBarHidden</key>
 				<string>（BOOL）是否显示导航栏</string>

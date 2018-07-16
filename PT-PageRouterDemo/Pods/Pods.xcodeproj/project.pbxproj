@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001A7FDA0702FA6BF1DCEE6970478A48 /* PTPageRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E77D007BF0836A0214205108A1F45E /* PTPageRouter-dummy.m */; };
-		45ED1575D922A0B982437441F4400D55 /* PTPageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EB84A1CF666A9B021B0F27A8D221A6 /* PTPageModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		001A7FDA0702FA6BF1DCEE6970478A48 /* PTPageRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1A9DB056A8BBEB4AD01B6D9436FA06 /* PTPageRouter-dummy.m */; };
+		3F0FDA4BF49C993A7EBB4AAEC25AE92B /* PTPageRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E9B6A953C2FBC7BF1F06376802383 /* PTPageRouter.m */; };
+		4067E58E61C25FBCD1E84A5BEDD170A6 /* PTPageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B81203184F34EB2E48A4B0DDF4EE31E /* PTPageModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6B0D6BDF2A58BBA0A17E4C0C608C188D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		C42D799042E1121CDF13AC7E2FAD4043 /* PTPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E7475E2CE9EE79988F74A4E450265D /* PTPageModel.m */; };
-		CE8254C82A1DBA867A4EE877E47BEAA4 /* PTPageRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = A34DDB3AE8622D6A8FD7B23DAC7907D4 /* PTPageRouter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DD8C11AB759AE32A1392E0DED3294228 /* PTPageRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFAA32EB71794432F830A4E3CDF7C79D /* PTPageRouter.m */; };
+		7CA67D22D73CD72164FB6A2CDFA8E057 /* PTPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B4DC1EB70A23D49E2BE267B2225624 /* PTPageModel.m */; };
+		868202C8A22EFDFD161217A6161C9D46 /* PTPageRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = D9EBB385FC3548B7C59AE21C0B0BD44C /* PTPageRouter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E984B203B0409D4B63D4A6F068906F3E /* Pods-PT-PageRouterDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB975AE6F46823B4DF1835DE6E3493E /* Pods-PT-PageRouterDemo-dummy.m */; };
 		F4472635084FEF2DC2BD15B4CB76A992 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -29,21 +29,21 @@
 
 /* Begin PBXFileReference section */
 		084ADB1AC2E2C79D678ECF011AF6AC13 /* Pods-PT-PageRouterDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PT-PageRouterDemo-resources.sh"; sourceTree = "<group>"; };
+		0A2E9B6A953C2FBC7BF1F06376802383 /* PTPageRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPageRouter.m; path = PTPageRouter/PTPageRouter.m; sourceTree = "<group>"; };
 		14516907E67F231DC505641E590DFF4D /* Pods-PT-PageRouterDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PT-PageRouterDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		233E910CDCEBBC8596F0718AFCC566B2 /* Pods-PT-PageRouterDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PT-PageRouterDemo-frameworks.sh"; sourceTree = "<group>"; };
-		23E77D007BF0836A0214205108A1F45E /* PTPageRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PTPageRouter-dummy.m"; sourceTree = "<group>"; };
-		599E05CE1BF95792F227CD25449AD60C /* PTPageRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PTPageRouter-prefix.pch"; sourceTree = "<group>"; };
+		5F56A3DB07E13B6A95DD7A844A2CBF23 /* PTPageRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PTPageRouter.xcconfig; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6B81203184F34EB2E48A4B0DDF4EE31E /* PTPageModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPageModel.h; path = PTPageRouter/PTPageModel.h; sourceTree = "<group>"; };
+		7B525D6AB941B7E72735607C05D4A7C5 /* PTPageRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PTPageRouter-prefix.pch"; sourceTree = "<group>"; };
+		80B4DC1EB70A23D49E2BE267B2225624 /* PTPageModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPageModel.m; path = PTPageRouter/PTPageModel.m; sourceTree = "<group>"; };
 		92E0FB9D076ACC6582E86D763B56C0C3 /* libPTPageRouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libPTPageRouter.a; path = libPTPageRouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		93965BADC6695906BAF7094C07EB65E7 /* libPods-PT-PageRouterDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-PT-PageRouterDemo.a"; path = "libPods-PT-PageRouterDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A34DDB3AE8622D6A8FD7B23DAC7907D4 /* PTPageRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPageRouter.h; path = "PT-PageRouterDemo/Router/PTPageRouter.h"; sourceTree = "<group>"; };
-		A3E7475E2CE9EE79988F74A4E450265D /* PTPageModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPageModel.m; path = "PT-PageRouterDemo/Router/PTPageModel.m"; sourceTree = "<group>"; };
 		ACB975AE6F46823B4DF1835DE6E3493E /* Pods-PT-PageRouterDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PT-PageRouterDemo-dummy.m"; sourceTree = "<group>"; };
-		B6EB84A1CF666A9B021B0F27A8D221A6 /* PTPageModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPageModel.h; path = "PT-PageRouterDemo/Router/PTPageModel.h"; sourceTree = "<group>"; };
-		BFAA32EB71794432F830A4E3CDF7C79D /* PTPageRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PTPageRouter.m; path = "PT-PageRouterDemo/Router/PTPageRouter.m"; sourceTree = "<group>"; };
 		C74BB03FF7664781472468CBBA19E4C5 /* Pods-PT-PageRouterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PT-PageRouterDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		CB2354BDE5C6543BA2D691CADA631921 /* PTPageRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PTPageRouter.xcconfig; sourceTree = "<group>"; };
+		CD1A9DB056A8BBEB4AD01B6D9436FA06 /* PTPageRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PTPageRouter-dummy.m"; sourceTree = "<group>"; };
+		D9EBB385FC3548B7C59AE21C0B0BD44C /* PTPageRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PTPageRouter.h; path = PTPageRouter/PTPageRouter.h; sourceTree = "<group>"; };
 		EF365B564C476CDB789DD2C5DB071EA2 /* Pods-PT-PageRouterDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PT-PageRouterDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FBC679BFE87C378C390910B5C937E195 /* Pods-PT-PageRouterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PT-PageRouterDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,23 +68,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		173ECB5A8D0099B6EED4378292492FA9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CB2354BDE5C6543BA2D691CADA631921 /* PTPageRouter.xcconfig */,
-				23E77D007BF0836A0214205108A1F45E /* PTPageRouter-dummy.m */,
-				599E05CE1BF95792F227CD25449AD60C /* PTPageRouter-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PTPageRouter";
-			sourceTree = "<group>";
-		};
 		30122B8C33C5B1A2621847137CE65982 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				51F58E656CD80934E8238DA503232F5A /* Pods-PT-PageRouterDemo */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3049B23D0BE19D1993ED1933193B06F3 /* PTPageRouter */ = {
+			isa = PBXGroup;
+			children = (
+				6B81203184F34EB2E48A4B0DDF4EE31E /* PTPageModel.h */,
+				80B4DC1EB70A23D49E2BE267B2225624 /* PTPageModel.m */,
+				D9EBB385FC3548B7C59AE21C0B0BD44C /* PTPageRouter.h */,
+				0A2E9B6A953C2FBC7BF1F06376802383 /* PTPageRouter.m */,
+				32F9955C569363F83C531792066D5845 /* Support Files */,
+			);
+			name = PTPageRouter;
+			path = PTPageRouter;
+			sourceTree = "<group>";
+		};
+		32F9955C569363F83C531792066D5845 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F56A3DB07E13B6A95DD7A844A2CBF23 /* PTPageRouter.xcconfig */,
+				CD1A9DB056A8BBEB4AD01B6D9436FA06 /* PTPageRouter-dummy.m */,
+				7B525D6AB941B7E72735607C05D4A7C5 /* PTPageRouter-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PTPageRouter";
 			sourceTree = "<group>";
 		};
 		51F58E656CD80934E8238DA503232F5A /* Pods-PT-PageRouterDemo */ = {
@@ -102,19 +115,6 @@
 			path = "Target Support Files/Pods-PT-PageRouterDemo";
 			sourceTree = "<group>";
 		};
-		53CECD34AD878010F84901B7D70C726A /* PTPageRouter */ = {
-			isa = PBXGroup;
-			children = (
-				B6EB84A1CF666A9B021B0F27A8D221A6 /* PTPageModel.h */,
-				A3E7475E2CE9EE79988F74A4E450265D /* PTPageModel.m */,
-				A34DDB3AE8622D6A8FD7B23DAC7907D4 /* PTPageRouter.h */,
-				BFAA32EB71794432F830A4E3CDF7C79D /* PTPageRouter.m */,
-				173ECB5A8D0099B6EED4378292492FA9 /* Support Files */,
-			);
-			name = PTPageRouter;
-			path = PTPageRouter;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +129,7 @@
 		B30C01923898A1B03C9C7123E03389C9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				53CECD34AD878010F84901B7D70C726A /* PTPageRouter */,
+				3049B23D0BE19D1993ED1933193B06F3 /* PTPageRouter */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -166,8 +166,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45ED1575D922A0B982437441F4400D55 /* PTPageModel.h in Headers */,
-				CE8254C82A1DBA867A4EE877E47BEAA4 /* PTPageRouter.h in Headers */,
+				4067E58E61C25FBCD1E84A5BEDD170A6 /* PTPageModel.h in Headers */,
+				868202C8A22EFDFD161217A6161C9D46 /* PTPageRouter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42D799042E1121CDF13AC7E2FAD4043 /* PTPageModel.m in Sources */,
+				7CA67D22D73CD72164FB6A2CDFA8E057 /* PTPageModel.m in Sources */,
 				001A7FDA0702FA6BF1DCEE6970478A48 /* PTPageRouter-dummy.m in Sources */,
-				DD8C11AB759AE32A1392E0DED3294228 /* PTPageRouter.m in Sources */,
+				3F0FDA4BF49C993A7EBB4AAEC25AE92B /* PTPageRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +309,7 @@
 		};
 		8D1A6E08C63F71F8125360B4A3E6E492 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB2354BDE5C6543BA2D691CADA631921 /* PTPageRouter.xcconfig */;
+			baseConfigurationReference = 5F56A3DB07E13B6A95DD7A844A2CBF23 /* PTPageRouter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -394,7 +394,7 @@
 		};
 		D59040E9E689FA779B9423800D04FAB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB2354BDE5C6543BA2D691CADA631921 /* PTPageRouter.xcconfig */;
+			baseConfigurationReference = 5F56A3DB07E13B6A95DD7A844A2CBF23 /* PTPageRouter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

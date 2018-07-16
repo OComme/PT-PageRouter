@@ -48,7 +48,7 @@
 /**
  Form data selects configured keys
  */
-@property (nullable,nonatomic,copy) NSDictionary <NSString *,id>*keys_options;
+@property (nullable,nonatomic,copy) NSDictionary <NSString *,id>*keys_option;
 
 
 @end

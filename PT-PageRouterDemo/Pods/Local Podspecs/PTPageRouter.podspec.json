@@ -15,5 +15,5 @@
     "git": "https://github.com/OComme/PT-PageRouter.git",
     "tag": "0.0.3"
   },
-  "source_files": "PT-PageRouterDemo/Router/*"
+  "source_files": "PTPageRouter/*"
 }
