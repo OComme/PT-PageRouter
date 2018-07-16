@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PTPageRouter"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   
   #简短介绍，下面是详细介绍
   s.summary      = "something about prefix header of WKPrefixHeader."
