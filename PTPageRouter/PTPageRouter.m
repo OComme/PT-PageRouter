@@ -23,7 +23,7 @@
 
 + (UIViewController *)PT_getViewControllerForPageModel:(PTPageModel<PTPageModelProtocol> *)pageModel
 {
-    return [self PT_getViewControllerForPageModel:pageModel];
+    return [self PT_getViewControllerForPageModel:pageModel FormData:nil];
 }
 
 + (UIViewController *)PT_getViewControllerForPageModel:(PTPageModel<PTPageModelProtocol> *)pageModel FormData:(NSDictionary *)formData
