@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   # s.source       = { :git => "https://github.com/OComme/WK-PrefixHeader.git", branch: 'master', :tag => "#{s.version}" }
 
   # 相对'podspec'文件位置
-  s.source_files = "PT-PageRouterDemo/Router/*"
+  s.source_files = "PTPageRouter/*"
   
   # 引用头文件
   # s.public_header_files = 'WKPrefixHeader/WKPrefixHeader.h'

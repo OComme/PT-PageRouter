@@ -1,5 +1,5 @@
 PODS:
-  - PTPageRouter (0.0.2)
+  - PTPageRouter (0.0.3)
 
 DEPENDENCIES:
   - PTPageRouter (from `../`)
@@ -10,11 +10,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   PTPageRouter:
-    :commit: cbcce493ab707ce0d5db275a560728300b691509
+    :commit: adf176ee34afed14a970344dac5a1ddf096d4dee
     :git: ../
 
 SPEC CHECKSUMS:
-  PTPageRouter: 18b036ea8183f822f9b5fd24f9145e3e66858892
+  PTPageRouter: 4ce51bbd41a84c4c89c615966292e1ab1cd34769
 
 PODFILE CHECKSUM: 377a0687eb880209fe7f7e862b55513a4994e91d
 
