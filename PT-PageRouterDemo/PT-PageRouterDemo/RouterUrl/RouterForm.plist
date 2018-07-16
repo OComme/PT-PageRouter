@@ -6,14 +6,18 @@
 	<dict>
 		<key>home</key>
 		<dict>
-			<key>_descip</key>
+			<key>synopsis</key>
 			<string> 这是首页</string>
-			<key>_require</key>
+			<key>descrip</key>
+			<string> 这是首页</string>
+			<key>name</key>
+			<string>ViewController</string>
+			<key>keys_require</key>
 			<dict>
 				<key>title</key>
 				<string>（NSString）页面标题</string>
 			</dict>
-			<key>_option</key>
+			<key>keys_options</key>
 			<dict>
 				<key>navigationBarHidden</key>
 				<string>（BOOL）是否显示导航栏</string>

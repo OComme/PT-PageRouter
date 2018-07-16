@@ -7,17 +7,18 @@
 //
 
 #import "ViewController.h"
-#import "PublicPageRouter.h"
+#import "MyPageModel.h"
+#import <PTPageRouter.h>
 
-@interface ViewController ()<PTPublicPageRouterDelegate>
+@interface ViewController ()<PTPageRouterProtocol>
 
 @end
 
 @implementation ViewController
 
-- (void)router_setParamentDict:(NSDictionary *)dict
+- (void)pt_setFormData:(NSDictionary *)formData
 {
-    self.title = dict[@"title"];
+    self.title = formData[@"title"];
 }
 
 - (void)viewDidLoad {
@@ -44,7 +45,13 @@
  点击跳转
  */
 - (void)event_modal:(id)sender {
-    [PublicPageRouter OpenUrlWithModalType:PublicPageRouterModuleTestHome DataEntity:@{@"title":@"MMP"} Animated:YES];
+    MyPageModel *pageModel = [MyPageModel new];
+    pageModel.path = @"TestModule/home";
+    
+    UIViewController *resultVc = [PTPageRouter PT_getViewControllerForPageModel:pageModel FormData:@{@"title":@"MMP"}];
+    [self.navigationController pushViewController:resultVc animated:YES];
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
