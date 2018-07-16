@@ -14,7 +14,6 @@
 		847394871FE77A4100307B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847394861FE77A4100307B6D /* Assets.xcassets */; };
 		8473948A1FE77A4100307B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847394881FE77A4100307B6D /* LaunchScreen.storyboard */; };
 		8473948D1FE77A4100307B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473948C1FE77A4100307B6D /* main.m */; };
-		847394961FE77A9400307B6D /* PTPublicPageRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 847394951FE77A9300307B6D /* PTPublicPageRouter.m */; };
 		8473949A1FE77AF600307B6D /* RouterForm.plist in Resources */ = {isa = PBXBuildFile; fileRef = 847394971FE77AF500307B6D /* RouterForm.plist */; };
 		8473949E1FE77B1300307B6D /* PublicPageRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473949D1FE77B1300307B6D /* PublicPageRouter.m */; };
 /* End PBXBuildFile section */
@@ -33,8 +32,6 @@
 		847394891FE77A4100307B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8473948B1FE77A4100307B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8473948C1FE77A4100307B6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		847394941FE77A9300307B6D /* PTPublicPageRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTPublicPageRouter.h; sourceTree = "<group>"; };
-		847394951FE77A9300307B6D /* PTPublicPageRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTPublicPageRouter.m; sourceTree = "<group>"; };
 		847394971FE77AF500307B6D /* RouterForm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RouterForm.plist; sourceTree = "<group>"; };
 		8473949C1FE77B1300307B6D /* PublicPageRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicPageRouter.h; sourceTree = "<group>"; };
 		8473949D1FE77B1300307B6D /* PublicPageRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicPageRouter.m; sourceTree = "<group>"; };
@@ -83,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				8473949F1FE77C1100307B6D /* RouterUrl */,
-				847394931FE77A9300307B6D /* Router */,
 				8473947D1FE77A4100307B6D /* AppDelegate.h */,
 				8473947E1FE77A4100307B6D /* AppDelegate.m */,
 				847394801FE77A4100307B6D /* ViewController.h */,
@@ -96,15 +92,6 @@
 			);
 			path = "PT-PageRouterDemo";
 			sourceTree = "<group>";
-		};
-		847394931FE77A9300307B6D /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				847394941FE77A9300307B6D /* PTPublicPageRouter.h */,
-				847394951FE77A9300307B6D /* PTPublicPageRouter.m */,
-			);
-			path = Router;
-			sourceTree = SOURCE_ROOT;
 		};
 		8473949F1FE77C1100307B6D /* RouterUrl */ = {
 			isa = PBXGroup;
@@ -251,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8473949E1FE77B1300307B6D /* PublicPageRouter.m in Sources */,
-				847394961FE77A9400307B6D /* PTPublicPageRouter.m in Sources */,
 				847394821FE77A4100307B6D /* ViewController.m in Sources */,
 				8473948D1FE77A4100307B6D /* main.m in Sources */,
 				8473947F1FE77A4100307B6D /* AppDelegate.m in Sources */,
