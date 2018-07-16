@@ -73,7 +73,7 @@
  */
 - (BOOL)check_formDataAvailability
 {
-    if (self.pageModel.keys_require == nil && self.pageModel.keys_options == nil) {
+    if (self.pageModel.keys_require == nil && self.pageModel.keys_option == nil) {
         NSAssert(self.formData == nil, ([NSString stringWithFormat:@"%@ doesn't contains an unallowed key",self.pageModel.synopsis]));
         return (self.formData == nil);
     }
@@ -84,9 +84,9 @@
 
     BOOL enable = YES;
     NSSet <NSString *>* keysSet = [NSSet setWithArray:self.formData.allKeys];
-    if (self.pageModel.keys_options != nil && self.pageModel.keys_require != nil) {
+    if (self.pageModel.keys_option != nil && self.pageModel.keys_require != nil) {
         NSMutableArray *keysAll = [NSMutableArray new];
-        [keysAll addObjectsFromArray:self.pageModel.keys_options.allKeys];
+        [keysAll addObjectsFromArray:self.pageModel.keys_option.allKeys];
         [keysAll addObjectsFromArray:self.pageModel.keys_require.allKeys];
         enable = [keysSet isSubsetOfSet:[NSSet setWithArray:keysAll]];
         NSAssert(enable, ([NSString stringWithFormat:@"%@ doesn't contains an unallowed key",self.pageModel.synopsis]));
