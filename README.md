@@ -1,8 +1,12 @@
 # PT-PageRouter
 
-使用`PTPageRouter`
+使用`PTPageRouter`是为了：
 
-首先需要创建一张注册了页面信息的表单（规范页面跳转时的信息传递，方便组件化的开发）
+- 解耦页面跳转（方便组件化开发）
+- 规范跳转时的信息传递
+
+其使用需要创建一张注册了页面配置信息的表单，表单中的页面需遵循`PTPageRouterDrotocol`协议以标识其为`Router`的参与者
+
 ```Objective-C
 /*
  example Dict
@@ -31,20 +35,20 @@
  </dict>
  </dict>
  */
- ```
- 
- 然后将传入的数据转换成页面配置的模型`PTPageModel`（使用子类继承）后,经`PTPageRouter`转换成目标控制器
- 
- ```Objective-C
- /**
- get <UIViewController *> from <PTPageModel *> and <NSDictionary *>
- */
+```
+
+传入的数据被转换成页面配置的模型`PTPageModel`（子类）后,`PTPageRouter`使用这个配置模型生成目标控制器
+
+```Objective-C
+/**
+get <UIViewController *> from <PTPageModel *> and <NSDictionary *>
+*/
 + (UIViewController *_Nullable)PT_getViewControllerForPageModel:(PTPageModel<PTPageModelProtocol> *_Nonnull)pageModel FormData:(NSDictionary *_Nullable)formData;
 
 /**
- get <UIViewController *> from <PTPageModel *> and nil
- */
+get <UIViewController *> from <PTPageModel *> and nil
+*/
 + (UIViewController *_Nullable)PT_getViewControllerForPageModel:(PTPageModel<PTPageModelProtocol> *_Nonnull)pageModel;
- ```
+```
 
-当取得目标控制器的实例，就可以在自己的方法里开始跳转。
+拿到目标控制器实例，就可以在自己的方法里实现跳转及相关逻辑了。
