@@ -31,12 +31,12 @@ basic data Configure
 @interface PTPageRouter : NSObject
 
 /**
- get <UIViewController *> from <PTPageModel *> and <NSDictionary *>
+ get <UIViewController *> from keyPath and <NSDictionary *>formData
  */
 + (UIViewController *_Nullable)PT_getViewControllerFromKeyPath:(NSString *_Nonnull)keyPath FormData:(NSDictionary *_Nullable)formData;
 
 /**
- get <UIViewController *> from <PTPageModel *> and nil
+ get <UIViewController *> from keyPath and nil
  */
 + (UIViewController *_Nullable)PT_getViewControllerFromKeyPath:(NSString *_Nonnull)keyPath;
 
