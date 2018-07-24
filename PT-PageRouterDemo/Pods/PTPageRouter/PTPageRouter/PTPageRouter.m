@@ -17,27 +17,24 @@
 
 @property (nullable,nonatomic,copy) NSDictionary *formData;
 
+@property (nonnull,nonatomic,copy) NSString *formPath;
+
 @end
 
 @implementation PTPageRouter
 
-+ (UIViewController *)PT_getViewControllerForPageModel:(PTPageModel<PTPageModelProtocol> *)pageModel
++ (UIViewController *)PT_getViewControllerFromKeyPath:(NSString *)keyPath
 {
-    return [self PT_getViewControllerForPageModel:pageModel];
+    return [self PT_getViewControllerFromKeyPath:keyPath FormData:nil];
 }
 
-+ (UIViewController *)PT_getViewControllerForPageModel:(PTPageModel<PTPageModelProtocol> *)pageModel FormData:(NSDictionary *)formData
++ (UIViewController *)PT_getViewControllerFromKeyPath:(NSString *)keyPath FormData:(NSDictionary *)formData
 {
-    NSAssert(pageModel, @"Page jump configuration can't be nil");
+    PTPageRouter *router = [self new];
+    router.pageModel = [router produce_pageModelWithKeyPath:keyPath];
+    NSAssert(router.pageModel, @"Key Path unAviable");
     
-    if (pageModel == nil) {
-        return nil;
-    }
-    [pageModel pt_upDatePageInfo];
-    
-    PTPageRouter *router = [PTPageRouter new];
-    router.pageModel    = pageModel;
-    router.formData     = formData;
+    router.formData  = formData;
     
     BOOL enable = [router check_pageConfigureAvailability] && [router check_formDataAvailability];
     if (enable == NO) {
@@ -50,6 +47,18 @@
     return vc;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSAssert([self isMemberOfClass:[PTPageRouter class]] == NO, @"PTPageRouter cannot be used directly as an abstract class ");
+        NSAssert([self conformsToProtocol:@protocol(PTPageFormProtocol)] && [self respondsToSelector:@selector(pt_getPageFormPath)], ([NSString stringWithFormat:@"%@ need follow the form protocol PTPageFormProtocol",self.class]));
+        _formPath = [(id<PTPageFormProtocol>)self pt_getPageFormPath];
+        
+        NSAssert(_formPath && [[NSFileManager defaultManager] fileExistsAtPath:_formPath], @"The PTPageFormProtocol callback cannot be empty");
+    }
+    return self;
+}
 
 /**
  Check the page configuration
@@ -96,6 +105,25 @@
     }
     
     return enable;
+}
+
+- (PTPageModel *)produce_pageModelWithKeyPath:(NSString *)path
+{
+    if (path.length == 0) {
+        return nil;
+    }
+    NSArray *keyArray = [path componentsSeparatedByString:@"/"];
+    NSDictionary *formData = [NSDictionary dictionaryWithContentsOfFile:self.formPath];
+    
+    for (NSString *key in keyArray) {
+        if ([formData[key] isKindOfClass:[NSDictionary class]] == NO) {
+            return  nil;
+        }
+        formData = formData[key];
+    }
+    PTPageModel *pageModel = [PTPageModel new];
+    [pageModel setValuesForKeysWithDictionary:formData];
+    return pageModel;
 }
 
 @end

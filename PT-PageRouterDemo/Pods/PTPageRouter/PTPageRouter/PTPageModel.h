@@ -9,21 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol PTPageModelProtocol <NSObject>
-
-/**
- Get the page model from the path in the form data
- */
-- (void)pt_upDatePageInfo;
-
-@end
-
 @interface PTPageModel : NSObject
-
-/**
- The page describes the path of information in the form
- */
-@property (nonnull,nonatomic,copy) NSString *path;
 
 /**
  class name

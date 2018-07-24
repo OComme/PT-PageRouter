@@ -9,6 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "PTPageModel.h"
 
+@protocol PTPageFormProtocol <NSObject>
+
+/**
+ Get the page form path from subclass
+ */
+- (NSString *_Nullable)pt_getPageFormPath;
+
+@end
+
 @protocol PTPageRouterProtocol <NSObject>
 
 @optional
@@ -24,11 +33,11 @@ basic data Configure
 /**
  get <UIViewController *> from <PTPageModel *> and <NSDictionary *>
  */
-+ (UIViewController *_Nullable)PT_getViewControllerForPageModel:(PTPageModel<PTPageModelProtocol> *_Nonnull)pageModel FormData:(NSDictionary *_Nullable)formData;
++ (UIViewController *_Nullable)PT_getViewControllerFromKeyPath:(NSString *_Nonnull)keyPath FormData:(NSDictionary *_Nullable)formData;
 
 /**
  get <UIViewController *> from <PTPageModel *> and nil
  */
-+ (UIViewController *_Nullable)PT_getViewControllerForPageModel:(PTPageModel<PTPageModelProtocol> *_Nonnull)pageModel;
++ (UIViewController *_Nullable)PT_getViewControllerFromKeyPath:(NSString *_Nonnull)keyPath;
 
 @end

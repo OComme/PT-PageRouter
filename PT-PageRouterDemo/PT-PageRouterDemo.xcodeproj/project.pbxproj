@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04B7AE3B20FC7A6B00CC0806 /* MyPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B7AE3A20FC7A6B00CC0806 /* MyPageModel.m */; };
+		04D6DD1D2106D291002A0A90 /* MyPageRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D6DD1C2106D291002A0A90 /* MyPageRouter.m */; };
 		09627F5DAE4F21AC2886C83B /* libPods-PT-PageRouterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C38F3CD20D462522966A616 /* libPods-PT-PageRouterDemo.a */; };
 		8473947F1FE77A4100307B6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8473947E1FE77A4100307B6D /* AppDelegate.m */; };
 		847394821FE77A4100307B6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847394811FE77A4100307B6D /* ViewController.m */; };
@@ -20,8 +20,8 @@
 
 /* Begin PBXFileReference section */
 		024B623C35A420F478CBFD57 /* Pods-PT-PageRouterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT-PageRouterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PT-PageRouterDemo/Pods-PT-PageRouterDemo.release.xcconfig"; sourceTree = "<group>"; };
-		04B7AE3920FC7A6B00CC0806 /* MyPageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPageModel.h; sourceTree = "<group>"; };
-		04B7AE3A20FC7A6B00CC0806 /* MyPageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPageModel.m; sourceTree = "<group>"; };
+		04D6DD1B2106D291002A0A90 /* MyPageRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPageRouter.h; sourceTree = "<group>"; };
+		04D6DD1C2106D291002A0A90 /* MyPageRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPageRouter.m; sourceTree = "<group>"; };
 		6C38F3CD20D462522966A616 /* libPods-PT-PageRouterDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PT-PageRouterDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B735F669C061B7B74CB34FA /* Pods-PT-PageRouterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT-PageRouterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PT-PageRouterDemo/Pods-PT-PageRouterDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8473947A1FE77A4100307B6D /* PT-PageRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PT-PageRouterDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				847394971FE77AF500307B6D /* RouterForm.plist */,
-				04B7AE3920FC7A6B00CC0806 /* MyPageModel.h */,
-				04B7AE3A20FC7A6B00CC0806 /* MyPageModel.m */,
+				04D6DD1B2106D291002A0A90 /* MyPageRouter.h */,
+				04D6DD1C2106D291002A0A90 /* MyPageRouter.m */,
 			);
 			path = RouterUrl;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B7AE3B20FC7A6B00CC0806 /* MyPageModel.m in Sources */,
+				04D6DD1D2106D291002A0A90 /* MyPageRouter.m in Sources */,
 				847394821FE77A4100307B6D /* ViewController.m in Sources */,
 				8473948D1FE77A4100307B6D /* main.m in Sources */,
 				8473947F1FE77A4100307B6D /* AppDelegate.m in Sources */,

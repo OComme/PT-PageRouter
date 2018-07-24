@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "MyPageModel.h"
-#import <PTPageRouter.h>
+#import "MyPageRouter.h"
 
 @interface ViewController ()<PTPageRouterProtocol>
 
@@ -45,10 +44,8 @@
  点击跳转
  */
 - (void)event_modal:(id)sender {
-    MyPageModel *pageModel = [MyPageModel new];
-    pageModel.path = @"TestModule/home";
     
-    UIViewController *resultVc = [PTPageRouter PT_getViewControllerForPageModel:pageModel FormData:@{@"title":@"MMP"}];
+    UIViewController *resultVc = [MyPageRouter PT_getViewControllerFromKeyPath:@"TestModule/home" FormData:@{@"title":@"MMP"}];
     [self.navigationController pushViewController:resultVc animated:YES];
     
 
