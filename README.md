@@ -37,18 +37,18 @@
  */
 ```
 
-传入的数据被转换成页面配置的模型`PTPageModel`（子类）后,`PTPageRouter`使用这个配置模型生成目标控制器
+传入的路径`keyPath`被转换成页面配置的模型`PTPageModel`后,`PTPageRouter`使用这个配置模型生成目标控制器
 
 ```Objective-C
 /**
-get <UIViewController *> from <PTPageModel *> and <NSDictionary *>
-*/
-+ (UIViewController *_Nullable)PT_getViewControllerForPageModel:(PTPageModel<PTPageModelProtocol> *_Nonnull)pageModel FormData:(NSDictionary *_Nullable)formData;
+ get <UIViewController *> from keyPath and <NSDictionary *>formData
+ */
++ (UIViewController *_Nullable)PT_getViewControllerFromKeyPath:(NSString *_Nonnull)keyPath FormData:(NSDictionary *_Nullable)formData;
 
 /**
-get <UIViewController *> from <PTPageModel *> and nil
-*/
-+ (UIViewController *_Nullable)PT_getViewControllerForPageModel:(PTPageModel<PTPageModelProtocol> *_Nonnull)pageModel;
+ get <UIViewController *> from keyPath and nil
+ */
++ (UIViewController *_Nullable)PT_getViewControllerFromKeyPath:(NSString *_Nonnull)keyPath;
 ```
 
 拿到目标控制器实例，就可以在自己的方法里实现跳转及相关逻辑了。
