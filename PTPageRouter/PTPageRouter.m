@@ -82,10 +82,10 @@
  */
 - (BOOL)check_formDataAvailability
 {
-    if (self.pageModel.keys_require == nil && self.pageModel.keys_option == nil) {
-        NSAssert(self.formData == nil, ([NSString stringWithFormat:@"%@ doesn't contains an unallowed key",self.pageModel.synopsis]));
-        return (self.formData == nil);
+    if (self.pageModel.keys_require == nil) {
+        return YES;
     }
+
     NSAssert(self.formData, ([NSString stringWithFormat:@"%@ need contain the necessary keys",self.pageModel.synopsis]));
     if (self.formData == nil) {
         return NO;
